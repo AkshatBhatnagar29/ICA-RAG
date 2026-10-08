@@ -1,0 +1,10 @@
+[
+  {"query":"termination notice period", "relevant_sections":["termination"]},
+  {"query":"indemnification", "relevant_sections":["indemnification"]},
+  {"query":"limitation of liability", "relevant_sections":["liability"]},
+  {"query":"automatic renewal", "relevant_sections":["renewal"]},
+  {"query":"governing law India", "relevant_sections":["governing-law"]},
+  {"query":"jurisdiction", "relevant_sections":["jurisdiction"]},
+  {"query":"thirty days prior written notice", "relevant_sections":["termination","notice"]},
+  {"query":"12.3(a)", "relevant_sections":["identifier"]}
+]

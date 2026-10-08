@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.pytest_cache/
+.pytest-host-tmp/
+.pytest-tmp*/
+.test-tmp*/
+.mypy_cache/
+.ruff_cache/
+.uv-cache/
+
+# Coverage
+coverage.xml
+htmlcov/
+
+# Temporary / generated files
+.tmp-*
+*.tmp
+*.log
+
+# Data
+data/raw/*
+data/processed/*
+
+# Model caches
+data/model-cache/
+data/model_cache/
+**/model-cache/
+**/model_cache/
+
+# Hugging Face / ML caches
+.cache/
+**/.cache/
+huggingface/
+**/huggingface/
+
+# Evaluation outputs
+data/evaluation/results/
+reports/reranker_experiment/
+
+# Temporary test data
+.test-tmp-icat/
+
+# Local vector databases / indexes
+chroma/
+chroma_db/
+vector_db/
+*.faiss
+*.index
+
+# ML model files
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

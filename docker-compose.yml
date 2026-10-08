@@ -1,0 +1,70 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: ${APP_ENV:-development}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      AUTH_JWT_SECRET: ${AUTH_JWT_SECRET:-}
+      AUTH_ISSUER: ${AUTH_ISSUER:-icia}
+      AUTH_AUDIENCE: ${AUTH_AUDIENCE:-icia-api}
+      AUTH_ACCESS_TOKEN_MINUTES: ${AUTH_ACCESS_TOKEN_MINUTES:-30}
+      AUTH_BOOTSTRAP_TOKEN: ${AUTH_BOOTSTRAP_TOKEN:-}
+      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg://postgres:postgres@postgres:5432/contract_intelligence}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      RETRIEVAL_RRF_K: ${RETRIEVAL_RRF_K:-60}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-20b}
+      GROQ_TIMEOUT_SECONDS: ${GROQ_TIMEOUT_SECONDS:-30}
+      GROQ_MAX_RETRIES: ${GROQ_MAX_RETRIES:-2}
+      GENERATION_MAX_CONTEXT_TOKENS: ${GENERATION_MAX_CONTEXT_TOKENS:-6000}
+      GENERATION_MAX_OUTPUT_TOKENS: ${GENERATION_MAX_OUTPUT_TOKENS:-1200}
+      GENERATION_MIN_RERANKER_SCORE: ${GENERATION_MIN_RERANKER_SCORE:--0.3}
+      EMBEDDING_CACHE_PATH: ${EMBEDDING_CACHE_PATH:-/app/data/model-cache}
+      RERANKER_ENABLED: ${RERANKER_ENABLED:-false}
+      RERANKER_MODEL: ${RERANKER_MODEL:-jinaai/jina-reranker-v1-tiny-en}
+      RERANKER_MODEL_VERSION: ${RERANKER_MODEL_VERSION:-jina-reranker-v1-tiny-en}
+      RERANKER_CACHE_PATH: ${RERANKER_CACHE_PATH:-/app/data/model-cache/reranker}
+      RERANKER_CANDIDATE_K: ${RERANKER_CANDIDATE_K:-40}
+      RERANKER_BATCH_SIZE: ${RERANKER_BATCH_SIZE:-8}
+      RERANKER_MAX_LENGTH: ${RERANKER_MAX_LENGTH:-512}
+      RERANKER_THREADS: ${RERANKER_THREADS:-1}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')\""]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    volumes:
+      - document_storage:/app/data/storage
+      - model_cache:/app/data/model-cache
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: contract_intelligence
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports: ["5433:5432"]
+    volumes: ["postgres_data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d contract_intelligence"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+volumes:
+  postgres_data:
+  document_storage:
+  model_cache:

@@ -1,0 +1,1729 @@
+{
+  "dataset_name": "icia_two_contract_development_benchmark",
+  "version": "v1",
+  "description": "Combined frozen retrieval benchmark; source labels and cases are preserved.",
+  "source_documents": [
+    {
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "source_document": "Standard-agreement.pdf",
+      "source_sha256": "b720a8c0914608680f2001a0dc709b63c8f71ae0344e18809176962ebed37907",
+      "provenance": "data/raw/contracts/icat-version1/PDFs/PDFs/Standard-agreement.pdf; canonical restored fixture"
+    },
+    {
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "source_document": "1_PBK_IFMC_Tender_Document-1.pdf",
+      "source_sha256": "7f4a8ccc63ed80739b017884676b5c0c2796734a04969e9334cf5c26696604e7",
+      "provenance": "Official Ministry of External Affairs source: https://www.mea.gov.in/Portal/Tender/3768_1/1_PBK_IFMC_Tender_Document-1.pdf"
+    }
+  ],
+  "cases": [
+    {
+      "id": "V2-001",
+      "category": "contract_factual",
+      "question": "Which party is described as the Government in the employee agreement?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Governor of Goa",
+        "Government"
+      ],
+      "expected_answer": "The Governor of Goa is described as the Government.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "Governor of Goa"
+        }
+      ],
+      "minimum_citations": 1,
+      "difficulty": "easy",
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-002",
+      "category": "contract_factual",
+      "question": "Who is the other party to the employee agreement?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Official",
+        "Shri/Smt./Kum."
+      ],
+      "expected_answer": "The other party is the named Shri/Smt./Kum. identified in the agreement as the Official.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "hereinafter referred to as the \u00e2\u20ac\u0153Official\u00e2\u20ac\u009d"
+        }
+      ],
+      "minimum_citations": 1,
+      "difficulty": "easy",
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-003",
+      "category": "contract_factual",
+      "question": "For what type of appointment is the employee agreement used?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "contract basis"
+      ],
+      "expected_answer": "It is used for appointment to a post on contract basis.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "appointed ... on contract basis"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-004",
+      "category": "contract_factual",
+      "question": "What event starts the employee's appointment period?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "takes charge",
+        "period"
+      ],
+      "expected_answer": "The stated period runs from the date the official takes charge of the post.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "with effect from the date the official takes charge"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-005",
+      "category": "contract_factual",
+      "question": "What document is said to govern the terms and conditions of the appointment?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Agreement",
+        "terms and conditions"
+      ],
+      "expected_answer": "The agreement specifies the terms and conditions governing the appointment.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "governed by an Agreement specifying the terms and conditions"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-006",
+      "category": "contract_factual",
+      "question": "Does the employee have to follow the Government's orders?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "orders of the Government",
+        "rules and regulations"
+      ],
+      "expected_answer": "Yes. The Official must submit to the Government's orders and observe the rules and regulations in force.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "submit himself to the orders of the Government"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-007",
+      "category": "contract_factual",
+      "question": "Can the Official be assigned duties from time to time?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "duties",
+        "assigned"
+      ],
+      "expected_answer": "Yes. The Official must carry out duties assigned from time to time.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "carry out the duties as assigned to him from time to time"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-008",
+      "category": "contract_factual",
+      "question": "What standard of performance does the agreement require from the Official?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "efficiently",
+        "diligently"
+      ],
+      "expected_answer": "The Official must work efficiently and diligently to the best of their ability.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "employ himself/ herself efficiently and diligently"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-009",
+      "category": "obligation",
+      "question": "What must the contractor do strictly according to the tender?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "carry out the said work strictly",
+        "Tender"
+      ],
+      "expected_answer": "The contractor must carry out the work strictly according to the Tender provisions.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "carry out the said work strictly"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Contractor form, page 2"
+    },
+    {
+      "id": "V2-010",
+      "category": "obligation",
+      "question": "When must the contractor commence the work?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "commence",
+        "specified date"
+      ],
+      "expected_answer": "The contractor must commence on the date specified in the applicable tender or work order; the form does not fill in that date.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "commence the work on"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Contractor form, page 2"
+    },
+    {
+      "id": "V2-011",
+      "category": "obligation",
+      "question": "Within what period must the contractor complete the work?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "time period for completion"
+      ],
+      "expected_answer": "Completion is required within the time period indicated in the tender.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "time period for completion"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Contractor form, page 2"
+    },
+    {
+      "id": "V2-012",
+      "category": "obligation",
+      "question": "What security must the contractor provide when required by the work order?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "performance security",
+        "work order"
+      ],
+      "expected_answer": "The contractor must provide the performance security required by the work order.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "performance security"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Contractor form, page 2"
+    },
+    {
+      "id": "V2-013",
+      "category": "obligation",
+      "question": "Are the tender, work order, and financial bid incorporated into the agreement?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "form part of this Agreement"
+      ],
+      "expected_answer": "Yes. The identified tender, work order, and financial bid documents form part of the agreement as stated.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "form part of this Agreement"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Contractor form, page 2"
+    },
+    {
+      "id": "V2-014",
+      "category": "obligation",
+      "question": "Must the Official obtain permission before an ordinary absence?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "prior permission",
+        "Head of the Department"
+      ],
+      "expected_answer": "Yes. The Official must obtain prior permission from the Head of the Department, subject to the stated accident or sickness exception.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "absent himself/herself from his/ her duties without obtaining prior permission"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-015",
+      "category": "obligation",
+      "question": "Is the Official required to devote all working time to assigned duties?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "whole time",
+        "duties assigned"
+      ],
+      "expected_answer": "Yes. The Official must devote their whole time to the assigned duties.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "devote his/her whole time"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-016",
+      "category": "payment_financial",
+      "question": "How is the employee's monthly salary described?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "consolidated monthly salary",
+        "blank"
+      ],
+      "expected_answer": "It is described as a consolidated monthly salary, but the amount remains a blank placeholder in this standard form.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "consolidated monthly salary"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-017",
+      "category": "payment_financial",
+      "question": "Who is to pay the consolidated monthly salary?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Government",
+        "pay"
+      ],
+      "expected_answer": "The Government is to pay the consolidated monthly salary to the Official.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "The Government shall pay to the Official"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-018",
+      "category": "payment_financial",
+      "question": "What condition is attached to payment under clause 7?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "remains in Office",
+        "performs duties"
+      ],
+      "expected_answer": "Payment is stated to continue while the Official remains in office and actually performs the duties.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "remains in Office and actually"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-019",
+      "category": "payment_financial",
+      "question": "When may the Official draw TA/DA?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "TA/DA",
+        "official duties",
+        "headquarters"
+      ],
+      "expected_answer": "The Official may draw TA/DA as admissible to similarly placed Government officials when required to go outside headquarters on official duties.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "draw TA/DA"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-020",
+      "category": "payment_financial",
+      "question": "What happens to CPF eligibility if the contract extends beyond one year?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "extended beyond one year",
+        "contribute"
+      ],
+      "expected_answer": "On such an extension, the Official may contribute to CPF as applicable, with the stated Government contribution and interest payable at the end of the agreement or extension.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "period of contract is extended beyond one year"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-021",
+      "category": "payment_financial",
+      "question": "Who bears the stamp duty payable on the agreement?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "stamp duty",
+        "Government"
+      ],
+      "expected_answer": "The Government bears the stamp duty payable on the agreement.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "stamp duty payable"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-022",
+      "category": "termination_notice",
+      "question": "Can the Official terminate at any time under clause 5?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "at any time",
+        "one calendar month"
+      ],
+      "expected_answer": "Yes, subject to giving one calendar month's notice in writing to the Government.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "The Official may terminate this Agreement"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-023",
+      "category": "termination_notice",
+      "question": "What is the form of notice required for the Official's termination?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "written notice",
+        "Government"
+      ],
+      "expected_answer": "The notice must be given in writing to the Government.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "in writing to the Government"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-024",
+      "category": "termination_notice",
+      "question": "When does the agreement terminate after the Official gives notice?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "expiry of such notice",
+        "terminated"
+      ],
+      "expected_answer": "It stands terminated on expiry of the notice.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "on the expiry of such notice"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-025",
+      "category": "termination_notice",
+      "question": "What advance notice must the Government give the Official to terminate?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "one month's advance notice"
+      ],
+      "expected_answer": "The Government must give the Official one month's advance notice in writing.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "The Government may terminate this Agreement"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-026",
+      "category": "termination_notice",
+      "question": "What payment is due if the Government gives no termination notice?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "refund",
+        "pay of one month"
+      ],
+      "expected_answer": "The Government must refund an amount equivalent to one month's pay in lieu of notice.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "pay of one month in lieu"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-027",
+      "category": "termination_notice",
+      "question": "Does the employee termination clause state an immediate termination right without notice?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "one calendar month",
+        "notice"
+      ],
+      "expected_answer": "No. The clause states a one-calendar-month written notice requirement.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "one calendar month\u00e2\u20ac\u2122s notice"
+        }
+      ],
+      "minimum_citations": 1,
+      "difficulty": "adversarial",
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-028",
+      "category": "renewal_condition_exception",
+      "question": "Does the agreement specify an automatic renewal mechanism?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "No automatic renewal mechanism is stated in the provided agreement.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "minimum_citations": 0,
+      "difficulty": "hard",
+      "provenance": "Whole canonical document review"
+    },
+    {
+      "id": "V2-029",
+      "category": "renewal_condition_exception",
+      "question": "Does the agreement state a renewal notice window?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "No renewal notice window is stated in the provided agreement.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "minimum_citations": 0,
+      "difficulty": "hard",
+      "provenance": "Whole canonical document review"
+    },
+    {
+      "id": "V2-030",
+      "category": "renewal_condition_exception",
+      "question": "Is extension beyond one year mentioned for CPF purposes?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "extension beyond one year",
+        "CPF"
+      ],
+      "expected_answer": "Yes, extension beyond one year is mentioned as the condition for the stated CPF treatment; it is not an automatic renewal clause.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "extended beyond one year"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-031",
+      "category": "renewal_condition_exception",
+      "question": "What exception permits absence without prior permission?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "accident",
+        "sickness",
+        "competent medical authority"
+      ],
+      "expected_answer": "The stated exception is accident or sickness certified by the competent medical authority.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "case of accident or sickness certified"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-032",
+      "category": "renewal_condition_exception",
+      "question": "What happens to salary for absence beyond admissible leave?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "proportionate reduction",
+        "admissible leave"
+      ],
+      "expected_answer": "The agreement provides for a proportionate reduction in admissible salary under the stated conditions.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "proportionate reduction"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-033",
+      "category": "indemnity_liability_confidentiality_ip",
+      "question": "Does the agreement contain an indemnity obligation?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "No indemnity obligation is identified in the provided agreement.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "minimum_citations": 0,
+      "difficulty": "adversarial",
+      "provenance": "Whole canonical document review"
+    },
+    {
+      "id": "V2-034",
+      "category": "indemnity_liability_confidentiality_ip",
+      "question": "Does the agreement cap either party's liability?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "No liability cap is stated in the provided agreement.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "minimum_citations": 0,
+      "difficulty": "adversarial",
+      "provenance": "Whole canonical document review"
+    },
+    {
+      "id": "V2-035",
+      "category": "indemnity_liability_confidentiality_ip",
+      "question": "Does the agreement include a confidentiality survival period?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "No confidentiality survival period is stated in the provided agreement.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "minimum_citations": 0,
+      "difficulty": "hard",
+      "provenance": "Whole canonical document review"
+    },
+    {
+      "id": "V2-036",
+      "category": "indemnity_liability_confidentiality_ip",
+      "question": "Does the agreement assign intellectual property rights?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "No intellectual-property assignment provision is identified in the provided agreement.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "minimum_citations": 0,
+      "difficulty": "hard",
+      "provenance": "Whole canonical document review"
+    },
+    {
+      "id": "V2-037",
+      "category": "dispute_precedence",
+      "question": "Which document comes immediately after the Agreement in the precedence list?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Work order"
+      ],
+      "expected_answer": "The Work order comes immediately after the Agreement.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "following order of precedence"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Contractor form, page 2"
+    },
+    {
+      "id": "V2-038",
+      "category": "dispute_precedence",
+      "question": "Which document follows the Work order in the precedence list?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Financial bid"
+      ],
+      "expected_answer": "The Financial bid follows the Work order.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "Financial bid"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Contractor form, page 2"
+    },
+    {
+      "id": "V2-039",
+      "category": "dispute_precedence",
+      "question": "Who appoints the sole arbitrator under the employee agreement?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Secretary",
+        "Government of Goa"
+      ],
+      "expected_answer": "The sole arbitrator is a person appointed by the specified Secretary to the Government of Goa.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "sole arbitration"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-040",
+      "category": "dispute_precedence",
+      "question": "Are arbitration awards described as binding on the parties?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "final and binding"
+      ],
+      "expected_answer": "Yes. The award is stated to be final and binding on the parties.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "final and binding on the parties"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-041",
+      "category": "dispute_precedence",
+      "question": "Which statute is stated to apply to the arbitration proceedings?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "Arbitration and Conciliation Act, 1996"
+      ],
+      "expected_answer": "The Arbitration and Conciliation Act, 1996 and rules framed under it are stated to apply.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "Arbitration and Conciliation Act, 1996"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-042",
+      "category": "risk_analysis",
+      "question": "What contractual risk follows from the blank salary fields?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "blank",
+        "salary",
+        "cannot determine"
+      ],
+      "expected_answer": "A product risk is that the exact salary cannot be determined from this unfilled standard form; that is a document-completeness observation, not a legal conclusion.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "consolidated monthly salary"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-043",
+      "category": "risk_analysis",
+      "question": "What operational risk is associated with the no-work-no-wages clause?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "No work no wages",
+        "salary reduction"
+      ],
+      "expected_answer": "The clause creates a potential pay-impact risk for absence beyond admissible leave, subject to its stated conditions.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "No work no wages"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 5"
+    },
+    {
+      "id": "V2-044",
+      "category": "risk_analysis",
+      "question": "What should an answer avoid claiming about the employee's regular service status?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "contract states",
+        "not legal conclusion"
+      ],
+      "expected_answer": "It should report the contract's express no-claim wording without presenting that contract text alone as a universal legal conclusion.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "right or claim to be appointed in the regular service"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-045",
+      "category": "risk_analysis",
+      "question": "What document-completeness risk appears in the appointment form?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "placeholders",
+        "blank fields"
+      ],
+      "expected_answer": "Several identifying, appointment, period, and salary fields remain placeholders, so the executed particulars cannot be inferred from this template.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "[Name of Place]"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-046",
+      "category": "insufficient_evidence",
+      "question": "What exact designation was assigned to the Official?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "The exact designation cannot be determined because the designation field is a placeholder.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "[designation]"
+        }
+      ],
+      "insufficient_evidence_expected": true,
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-047",
+      "category": "insufficient_evidence",
+      "question": "What is the exact contract duration in this form?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "The exact duration cannot be determined because the period field is blank.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "for a period of __________"
+        }
+      ],
+      "insufficient_evidence_expected": true,
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-048",
+      "category": "insufficient_evidence",
+      "question": "What is the name of the appointing department?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "The department name cannot be determined because the form contains a blank department or organisation field.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "Departments of"
+        }
+      ],
+      "insufficient_evidence_expected": true,
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-049",
+      "category": "insufficient_evidence",
+      "question": "What date was the agreement signed?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_answer": "The exact signing date cannot be determined from the unfilled date fields and signature form.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "this _____ day of [month], 2015"
+        }
+      ],
+      "insufficient_evidence_expected": true,
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "V2-050",
+      "category": "legal_scope_required",
+      "question": "Does this contract wording by itself establish the legal enforceability of the regular-service exclusion?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "requires_legal": true,
+      "legal_corpus_version_id": "694e8846-51ef-55b8-83e3-62c056d7349a",
+      "expected_concepts": [
+        "contract wording",
+        "legal authority"
+      ],
+      "expected_answer": "No. The contract states the exclusion, but enforceability requires appropriate legal authority from the identified corpus and must not be inferred from the contract alone.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "shall not bestow on the Official any right or claim"
+        }
+      ],
+      "minimum_citations": 2,
+      "provenance": "Contract page 4 plus seeded legal corpus reference"
+    },
+    {
+      "id": "V2-051",
+      "category": "legal_scope_required",
+      "question": "Can the agreement alone answer whether a contractual employee is entitled to regularization under Indian law?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "requires_legal": true,
+      "legal_corpus_version_id": "694e8846-51ef-55b8-83e3-62c056d7349a",
+      "expected_concepts": [
+        "not enough",
+        "legal authority"
+      ],
+      "expected_answer": "No. The agreement supplies contract evidence, while a conclusion under Indian law requires retrieved legal authority.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "regular service of the Government"
+        }
+      ],
+      "minimum_citations": 2,
+      "provenance": "Contract page 4 plus seeded legal corpus reference"
+    },
+    {
+      "id": "V2-052",
+      "category": "legal_scope_required",
+      "question": "Should a current legal conclusion be made without a retrieved legal source?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "requires_legal": true,
+      "legal_corpus_version_id": "694e8846-51ef-55b8-83e3-62c056d7349a",
+      "expected_concepts": [
+        "insufficient legal evidence"
+      ],
+      "expected_answer": "No. The system should state that legal evidence is unavailable or insufficient rather than claim a current legal conclusion.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "contract basis"
+        }
+      ],
+      "minimum_citations": 2,
+      "provenance": "Contract page 4 plus seeded legal corpus reference"
+    },
+    {
+      "id": "V2-053",
+      "category": "mixed_contract_legal",
+      "question": "Separate the contract's notice rule from any legal rule about termination notice.",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "requires_legal": true,
+      "legal_corpus_version_id": "694e8846-51ef-55b8-83e3-62c056d7349a",
+      "expected_concepts": [
+        "one calendar month",
+        "legal source"
+      ],
+      "expected_answer": "The contract states a one-calendar-month written notice rule for the Official; any broader legal rule requires separate legal evidence.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "one calendar month\u00e2\u20ac\u2122s notice"
+        }
+      ],
+      "minimum_citations": 2,
+      "provenance": "Contract page 4 plus seeded legal corpus reference"
+    },
+    {
+      "id": "V2-054",
+      "category": "mixed_contract_legal",
+      "question": "What is the contract fact about arbitration, and what cannot be concluded about validity from it alone?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "requires_legal": true,
+      "legal_corpus_version_id": "694e8846-51ef-55b8-83e3-62c056d7349a",
+      "expected_concepts": [
+        "sole arbitration",
+        "validity requires legal evidence"
+      ],
+      "expected_answer": "The contract provides for sole arbitration and names the applicable arbitration statute; validity or legal effect beyond that text requires legal authority.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "sole arbitration"
+        }
+      ],
+      "minimum_citations": 2,
+      "provenance": "Contract page 5 plus seeded legal corpus reference"
+    },
+    {
+      "id": "V2-055",
+      "category": "citation_integrity",
+      "question": "Which clause supports the statement that contract appointment does not create regular-service entitlement?",
+      "document_version_id": "d89c42a8-0cf3-489d-89a7-e76b3b12ced1",
+      "expected_concepts": [
+        "clause (2)",
+        "regular service"
+      ],
+      "expected_answer": "Clause (2), on page 4, states that contract appointment does not bestow a right or claim to regular Government service.",
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "(2) The appointment of the Official"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Annexure II, page 4"
+    },
+    {
+      "id": "PBK-001",
+      "category": "contract_factual",
+      "question": "Which Ministry issued the tender for the facility management services?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "Ministry of External Affairs",
+        "Government of India"
+      ],
+      "expected_answer": "The Ministry of External Affairs issued the tender on behalf of the President of India.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "On behalf of the President of India, Ministry of External Affairs invites online bids"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Notice Inviting E-Tender, page 2"
+    },
+    {
+      "id": "PBK-002",
+      "category": "contract_factual",
+      "question": "Where are the integrated facility management services to be provided?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "Pravasi Bharatiya Kendra",
+        "Rizal Marg",
+        "New Delhi"
+      ],
+      "expected_answer": "The services are for Pravasi Bharatiya Kendra at 15-A, Rizal Marg, Chanakyapuri, New Delhi-110021.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "Pravasi Bharatiya Kendra, 15-A, Rizal Marg, Chanakyapuri, New Delhi-110021"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Tender subject, page 2"
+    },
+    {
+      "id": "PBK-003",
+      "category": "contract_factual",
+      "question": "What bid system does the notice require?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "TWO BID SYSTEM"
+      ],
+      "expected_answer": "The notice requires bids under a two-bid system.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "invites online bids under TWO BID SYSTEM"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Notice Inviting E-Tender, page 2"
+    },
+    {
+      "id": "PBK-004",
+      "category": "contract_factual",
+      "question": "What is the initial validity period if the contract is awarded?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "ONE YEAR"
+      ],
+      "expected_answer": "The contract is initially valid for one year, subject to the stated terms.",
+      "expected_evidence": [
+        {
+          "page": 42,
+          "anchor": "initially valid for a period of ONE YEAR"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Duration of Contract, page 42"
+    },
+    {
+      "id": "PBK-005",
+      "category": "obligation",
+      "question": "What must the contractor provide for round-the-clock housekeeping service?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "daily basis",
+        "relievers",
+        "twenty-four hour service"
+      ],
+      "expected_answer": "The contractor must provide housekeeping daily with relievers and make twenty-four-hour service available throughout the year.",
+      "expected_evidence": [
+        {
+          "page": 6,
+          "anchor": "Housekeeping services are to be provided on a daily basis, along with relievers"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Detailed Scope of Work, page 6"
+    },
+    {
+      "id": "PBK-006",
+      "category": "obligation",
+      "question": "Who determines the duties, allocation, and work for housekeeping services?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "discretion of MEA"
+      ],
+      "expected_answer": "The duties, allocation, and work are to be as per MEA's discretion.",
+      "expected_evidence": [
+        {
+          "page": 6,
+          "anchor": "The duties, allocation and work will be as per the discretion of MEA"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Detailed Scope of Work, page 6"
+    },
+    {
+      "id": "PBK-007",
+      "category": "obligation",
+      "question": "What worker verification is required before deployment?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "police verified",
+        "well-trained workers"
+      ],
+      "expected_answer": "The service provider must deploy only police-verified and well-trained workers as required by the approved scope of work.",
+      "expected_evidence": [
+        {
+          "page": 3,
+          "anchor": "deploy only police verified and well- trained workers"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Affidavit, page 3"
+    },
+    {
+      "id": "PBK-008",
+      "category": "obligation",
+      "question": "What records must the provider maintain for site operations?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "SOPs",
+        "Checklists",
+        "Trackers"
+      ],
+      "expected_answer": "The provider must maintain site documents, SOPs, checklists, and trackers and submit draft operational materials for MEA approval.",
+      "expected_evidence": [
+        {
+          "page": 50,
+          "anchor": "provide and maintain all site documents, SOPs, Checklists, Trackers"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms and Conditions, page 50"
+    },
+    {
+      "id": "PBK-009",
+      "category": "payment_financial",
+      "question": "How often is the contractor paid for services rendered?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "monthly basis",
+        "preceding month"
+      ],
+      "expected_answer": "The contractor is paid monthly for services rendered in the preceding month.",
+      "expected_evidence": [
+        {
+          "page": 23,
+          "anchor": "paid on a monthly basis for the services rendered in the preceding month"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Payments, page 23"
+    },
+    {
+      "id": "PBK-010",
+      "category": "payment_financial",
+      "question": "When should the contractor submit its monthly invoice?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "10 days",
+        "succeeding month"
+      ],
+      "expected_answer": "The contractor should submit a correct invoice within ten days of the succeeding month.",
+      "expected_evidence": [
+        {
+          "page": 23,
+          "anchor": "within 10 days of the succeeding month"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Payments, page 23"
+    },
+    {
+      "id": "PBK-011",
+      "category": "payment_financial",
+      "question": "Within what period will acceptable invoices be paid?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "30 days",
+        "acceptable invoices"
+      ],
+      "expected_answer": "Payment will be released within thirty days of submission of acceptable invoices.",
+      "expected_evidence": [
+        {
+          "page": 23,
+          "anchor": "payment shall be released within 30 days of submission of acceptable invoices"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Payments, page 23"
+    },
+    {
+      "id": "PBK-012",
+      "category": "payment_financial",
+      "question": "What is the performance security deposit percentage?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "10%",
+        "accepted contract value"
+      ],
+      "expected_answer": "The performance security deposit is ten percent of the accepted contract value.",
+      "expected_evidence": [
+        {
+          "page": 22,
+          "anchor": "sum equivalent to 10% of the accepted contract value"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Performance Security, page 22"
+    },
+    {
+      "id": "PBK-013",
+      "category": "termination_notice",
+      "question": "What notice follows a breach before MEA may terminate?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "one month's notice",
+        "breach"
+      ],
+      "expected_answer": "For a breach, MEA may cancel or terminate after giving one month's notice.",
+      "expected_evidence": [
+        {
+          "page": 28,
+          "anchor": "terminate the contract after giving one month\u2019s notice"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Termination of Contract, page 28"
+    },
+    {
+      "id": "PBK-014",
+      "category": "termination_notice",
+      "question": "What is the consequence of engaging a subcontractor?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "forfeiture",
+        "cancellation"
+      ],
+      "expected_answer": "Engaging a subcontractor or transferring the contract can lead to forfeiture of the security deposit, cancellation, and a damages claim.",
+      "expected_evidence": [
+        {
+          "page": 28,
+          "anchor": "sub-contractor or transfer the contract"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "PBK-013"
+      ],
+      "provenance": "Termination of Contract, page 28"
+    },
+    {
+      "id": "PBK-015",
+      "category": "renewal_condition_exception",
+      "question": "How many one-year extensions may MEA grant?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "two times",
+        "one year"
+      ],
+      "expected_answer": "The contract may be extended two times, by one year at a time, subject to satisfactory services.",
+      "expected_evidence": [
+        {
+          "page": 42,
+          "anchor": "may be extended two times, by one year at a time"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Duration of Contract, page 42"
+    },
+    {
+      "id": "PBK-016",
+      "category": "renewal_condition_exception",
+      "question": "What condition is attached to the possible contract extensions?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "satisfactory services",
+        "same terms"
+      ],
+      "expected_answer": "Extensions are on the same terms and rates, subject to satisfactory services provided by the vendor.",
+      "expected_evidence": [
+        {
+          "page": 42,
+          "anchor": "subject to satisfactory services provided by the vendor"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "PBK-015"
+      ],
+      "provenance": "Duration of Contract, page 42"
+    },
+    {
+      "id": "PBK-017",
+      "category": "scope_of_work",
+      "question": "Which service areas are included in the integrated facility management scope?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "Housekeeping",
+        "Security services",
+        "Pest"
+      ],
+      "expected_answer": "The scope includes housekeeping, glass cleaning, pest and rodent control, horticulture, security, and front/back office support services.",
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "Housekeeping Services, Glass cleaning, Pest & Rodent Control, Horticulture works, Security Services, Front/Back office support services"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Tender subject, page 2"
+    },
+    {
+      "id": "PBK-018",
+      "category": "scope_of_work",
+      "question": "What does housekeeping cover on a daily basis?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "common areas",
+        "guest rooms",
+        "upkeep and maintenance"
+      ],
+      "expected_answer": "It covers upkeep and maintenance of common areas and the interiors of guest rooms, with furniture shifting when required.",
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "Housekeeping Services for Pravasi Bharatiya Kendra"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Brief Scope of Work, page 5"
+    },
+    {
+      "id": "PBK-019",
+      "category": "service_level",
+      "question": "What service availability level is required for housekeeping?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "twenty-four hour",
+        "throughout the year"
+      ],
+      "expected_answer": "Twenty-four-hour service must be available throughout the year, with daily schedules.",
+      "expected_evidence": [
+        {
+          "page": 6,
+          "anchor": "Twenty-four hour service must be available throughout the year"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "PBK-005"
+      ],
+      "provenance": "Detailed Scope of Work, page 6"
+    },
+    {
+      "id": "PBK-020",
+      "category": "service_level",
+      "question": "How often must an experienced person visit PBK for preventive maintenance?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "daily",
+        "every shift",
+        "PPM"
+      ],
+      "expected_answer": "An experienced person must personally visit PBK daily in every shift and ensure planned preventive maintenance is followed.",
+      "expected_evidence": [
+        {
+          "page": 49,
+          "anchor": "personally visit PBK daily in every shift and ensure Planned Preventive Maintenance"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms and Conditions, page 49"
+    },
+    {
+      "id": "PBK-021",
+      "category": "service_level",
+      "question": "What staffing coverage must the provider maintain?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "24x7",
+        "all services are manned"
+      ],
+      "expected_answer": "The provider must organize staff so all services are manned and operated on a 24x7 basis or as ordered by management.",
+      "expected_evidence": [
+        {
+          "page": 50,
+          "anchor": "all services are manned, operated on 24x7 basis"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms and Conditions, page 50"
+    },
+    {
+      "id": "PBK-022",
+      "category": "penalty_or_deduction",
+      "question": "What penalty applies when deployed staff are absent?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "Rs.1000",
+        "absentee",
+        "per day"
+      ],
+      "expected_answer": "A penalty of Rs.1000 per absentee per day is deducted, in addition to the absentee's salary amount.",
+      "expected_evidence": [
+        {
+          "page": 51,
+          "anchor": "penalty of Rs.1000/- per absentee per day"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Penalties, page 51"
+    },
+    {
+      "id": "PBK-023",
+      "category": "penalty_or_deduction",
+      "question": "What deduction applies when machinery or equipment is missing?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "Rs 2000",
+        "machine/equipment",
+        "per day"
+      ],
+      "expected_answer": "Rs.2000 per missing machine or equipment per day is deducted from outstanding bills.",
+      "expected_evidence": [
+        {
+          "page": 51,
+          "anchor": "penalty of Rs 2000/- per machine/equipment per day"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "PBK-022"
+      ],
+      "provenance": "Penalties, page 51"
+    },
+    {
+      "id": "PBK-024",
+      "category": "penalty_or_deduction",
+      "question": "What is the maximum deduction for an unsatisfactory assigned work deficiency?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "up to twenty thousand",
+        "each deficiency"
+      ],
+      "expected_answer": "Up to twenty thousand may be deducted for each deficiency from the respective month's bill.",
+      "expected_evidence": [
+        {
+          "page": 51,
+          "anchor": "amount of up to twenty thousand will be deducted for each deficiency"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Penalties, page 51"
+    },
+    {
+      "id": "PBK-025",
+      "category": "indemnity_or_liability",
+      "question": "What responsibility does the provider have for licenses and statutory responsibilities?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "licenses",
+        "indemnify PBK, MEA"
+      ],
+      "expected_answer": "The provider must obtain required licenses and indemnify PBK and MEA from administrative, statutory, and legal responsibilities for its services.",
+      "expected_evidence": [
+        {
+          "page": 49,
+          "anchor": "obtain all the required /relevant licenses, registrations"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms and Conditions, page 49"
+    },
+    {
+      "id": "PBK-026",
+      "category": "indemnity_or_liability",
+      "question": "When can the performance security be forfeited?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "damage or loss",
+        "breach",
+        "unsatisfactory performance"
+      ],
+      "expected_answer": "It may be forfeited for specified damage or loss, breach or negligence, non-observance of terms, unsatisfactory performance, or nonacceptance of the work order.",
+      "expected_evidence": [
+        {
+          "page": 23,
+          "anchor": "Performance Security will be forfeited"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Performance Security, page 23"
+    },
+    {
+      "id": "PBK-027",
+      "category": "confidentiality_or_data",
+      "question": "What secrecy obligation applies to security manpower?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "complete secrecy",
+        "not divulge",
+        "after termination"
+      ],
+      "expected_answer": "Security manpower must maintain complete secrecy, must not divulge information obtained during operations, and must maintain secrecy after termination.",
+      "expected_evidence": [
+        {
+          "page": 16,
+          "anchor": "will maintain complete secrecy regarding the entire arrangements"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Secrecy, page 16"
+    },
+    {
+      "id": "PBK-028",
+      "category": "dispute_resolution",
+      "question": "What does the force majeure clause require the provider to do after an event arises?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "promptly notify",
+        "in writing",
+        "continue to perform"
+      ],
+      "expected_answer": "The provider must promptly notify the authority in writing, continue performance as reasonably practical unless directed otherwise, and seek alternatives.",
+      "expected_evidence": [
+        {
+          "page": 25,
+          "anchor": "shall promptly notify the authority in writing"
+        },
+        {
+          "page": 25,
+          "anchor": "continue to perform its obligations under the contract"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "mode": "ALL_OF",
+          "targets": [
+            {
+              "page": 25,
+              "anchor": "shall promptly notify the authority in writing"
+            },
+            {
+              "page": 25,
+              "anchor": "continue to perform its obligations under the contract"
+            }
+          ]
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Force Majeure, page 25"
+    },
+    {
+      "id": "PBK-029",
+      "category": "dispute_resolution",
+      "question": "Who has the final decision on whether a breach occurred?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "MEA",
+        "final and binding"
+      ],
+      "expected_answer": "The decision of MEA or its nominee on whether a breach occurred is final and binding on that point.",
+      "expected_evidence": [
+        {
+          "page": 28,
+          "anchor": "decision of MEA and/or his nominee shall be final and binding"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Termination of Contract, page 28"
+    },
+    {
+      "id": "PBK-030",
+      "category": "governing_law_or_jurisdiction",
+      "question": "Which labour legislation must the agency comply with for its licence?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "Contract Labour (R&A) Act, 1970",
+        "license"
+      ],
+      "expected_answer": "The agency must comply with the legal requirements for obtaining a licence under the Contract Labour (R&A) Act, 1970.",
+      "expected_evidence": [
+        {
+          "page": 49,
+          "anchor": "license under Contract Labour (R&A) Act, 1970"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms and Conditions, page 49"
+    },
+    {
+      "id": "PBK-031",
+      "category": "risk_analysis",
+      "question": "What potential operational risk follows if the provider lacks required manpower or equipment?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "penalty",
+        "deduction",
+        "shortfall"
+      ],
+      "expected_answer": "A potential product risk is recurring bill deductions and penalties for manpower or equipment shortfalls.",
+      "expected_evidence": [
+        {
+          "page": 51,
+          "anchor": "If the required numbers of workers/supervisors are less than specified"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Penalties, page 51"
+    },
+    {
+      "id": "PBK-032",
+      "category": "risk_analysis",
+      "question": "What potential risk is created by the extension language?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "extension",
+        "satisfactory services",
+        "MEA reserves"
+      ],
+      "expected_answer": "The contract presents a potential renewal and continuity risk because extensions are conditional on satisfactory service and MEA retains discretion over requirements.",
+      "expected_evidence": [
+        {
+          "page": 42,
+          "anchor": "may be extended two times, by one year at a time"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Duration of Contract, page 42"
+    },
+    {
+      "id": "PBK-033",
+      "category": "citation_integrity",
+      "question": "Which provision supports the one-month termination notice after breach?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_concepts": [
+        "one month\u2019s notice",
+        "breach"
+      ],
+      "expected_answer": "The termination clause states that MEA may terminate after giving one month's notice when the agency commits a breach.",
+      "expected_evidence": [
+        {
+          "page": 28,
+          "anchor": "In case the Agency commits any breach"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Termination of Contract, page 28"
+    },
+    {
+      "id": "PBK-034",
+      "category": "insufficient_evidence",
+      "question": "What is the exact awarded contractor name in the document?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_answer": "The exact awarded contractor name cannot be determined from this tender document and its blank agreement fields.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "difficulty": "hard",
+      "provenance": "Whole document review; contractor fields remain blank"
+    },
+    {
+      "id": "PBK-035",
+      "category": "insufficient_evidence",
+      "question": "What exact monthly contract amount was finally agreed?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_answer": "The final monthly contract amount cannot be determined because the financial schedule contains blank amount fields.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "difficulty": "hard",
+      "provenance": "Financial bid schedule, page 33"
+    },
+    {
+      "id": "PBK-036",
+      "category": "insufficient_evidence",
+      "question": "What exact date did the executed agreement commence?",
+      "document_version_id": "27077304-3640-46f0-84e5-7c26de4fc368",
+      "expected_answer": "The exact commencement date cannot be determined because the duration clause contains blank start and end fields.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "difficulty": "adversarial",
+      "provenance": "Duration of Contract, page 42"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "snapshot_date": "2026-09-13",
+  "git_sha": null,
+  "git_sha_note": "No usable .git directory is present in this checkout; pin the deployment to the source archive/image digest used for release.",
+  "runtime": {
+    "python": "3.12",
+    "fastapi": ">=0.115,<1",
+    "postgresql": "16",
+    "pgvector": "pgvector/pgvector:pg16",
+    "redis": "7-alpine",
+    "docker_image": "python:3.12-slim base; application image built from Dockerfile"
+  },
+  "retrieval": {
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "embedding_dimension": 384,
+    "embedding_batch_size": 32,
+    "chunk_target_tokens": 600,
+    "chunk_soft_max_tokens": 1000,
+    "chunk_hard_max_tokens": 1500,
+    "chunk_overlap_tokens": 40,
+    "bm25": "materialized authorized chunk set per request",
+    "rrf_k": 60,
+    "candidate_k": 40,
+    "reranker_model": "jinaai/jina-reranker-v1-tiny-en",
+    "reranker_model_version": "jina-reranker-v1-tiny-en",
+    "reranker_enabled": false,
+    "reranker_batch_size": 8,
+    "reranker_max_length": 512,
+    "reranker_threads": 1,
+    "reranker_top_k": 5
+  },
+  "generation": {
+    "llm_provider": "GroqProvider",
+    "llm_model": "openai/gpt-oss-20b",
+    "timeout_seconds": 30,
+    "max_retries": 2,
+    "max_context_tokens": 6000,
+    "max_output_tokens": 1200
+  },
+  "environment_assumptions": [
+    "CPU-only local ONNX inference",
+    "Docker Compose single host",
+    "DATABASE_URL uses postgres:5432 inside the Compose network",
+    "document and model-cache volumes are persistent",
+    "GROQ_API_KEY and production credentials are injected at deploy time",
+    "TLS certificates are mounted into the reverse proxy"
+  ],
+  "defaults_changed": false
+}

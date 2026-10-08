@@ -1,0 +1,133 @@
+{
+  "sample_version": "contract-clause-sample-v1",
+  "source_dataset": "data\\raw\\contracts\\legal_contract_clauses.csv",
+  "selection": "first row for each labeled behavior or text-backed behavior",
+  "records": [
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 5,
+      "clause_text": "If Distributor                            complies with all of the terms of this Agreement, the                            Agreement  shall be  renewable on an annual basis for                            one (1) year terms for up to  another  ten (10) years                            on the same terms and conditions as set forth herein.",
+      "clause_type": "Renewal Term",
+      "risk_level": "low",
+      "behavior": "renewal"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 6,
+      "clause_text": "This Agreement is to be construed according to the laws          of the State of Illinois.",
+      "clause_type": "Governing Law",
+      "risk_level": "low",
+      "behavior": "governing_law"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 16,
+      "clause_text": "No  assignment  of this  Agreement  or any  right                   accruing  hereunder  shall be made by the Distributor in whole                   or in part,  without the prior written consent of the Company,                   which  consent  shall  not  be  unreasonably  withheld.",
+      "clause_type": "Anti-Assignment",
+      "risk_level": "high",
+      "behavior": "anti_assignment"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 25,
+      "clause_text": "The Company  hereby grants the  Distributor                            the right to do business  and use the name  \"Electric                            City of  Illinois\"  or a  similar  variation  thereof                            (collectively   the   \"Names\")  for  use  under  this                            Agreement.",
+      "clause_type": "License Grant",
+      "risk_level": "low",
+      "behavior": "license"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 51,
+      "clause_text": "During the Term, and for a period of [ * ] thereafter, Google may audit Distributor's relevant records to confirm  Distributor's compliance with this Agreement.",
+      "clause_type": "Audit Rights",
+      "risk_level": "medium",
+      "behavior": "audit"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 52,
+      "clause_text": "Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreement (whether in contract, tort or  otherwise) arising in any Contract Year is limited to the greater of:\n\n  (a) [ * ] Euros ([ * ] Euros); and\n\n  (b) [ * ]% of the total payment due to the Distributor in the relevant Contract Year pursuant to Clause 4 (Payment Terms).",
+      "clause_type": "Uncapped Liability",
+      "risk_level": "high",
+      "behavior": "uncapped_liability"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 52,
+      "clause_text": "Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreement (whether in contract, tort or  otherwise) arising in any Contract Year is limited to the greater of:\n\n  (a) [ * ] Euros ([ * ] Euros); and\n\n  (b) [ * ]% of the total payment due to the Distributor in the relevant Contract Year pursuant to Clause 4 (Payment Terms).",
+      "clause_type": "Uncapped Liability",
+      "risk_level": "high",
+      "behavior": "payment"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 53,
+      "clause_text": "(c) breach of any implied condition as to title or quiet enjoyment; and\n\n  (d) misuse of confidential information.",
+      "clause_type": "Uncapped Liability",
+      "risk_level": "high",
+      "behavior": "confidentiality"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 56,
+      "clause_text": "Nothing in this Agreement shall exclude or limit either party's liability under Clause 10 (Indemnities), or Distributor's liability under Clause  2 (License Grants and Restrictions), Clause 3.5 (Exclusivity), Clause 3.6 (End User License Agreement) and Clause 3.7 (Accurate  Reproduction) or Clause [ * ].",
+      "clause_type": "Uncapped Liability",
+      "risk_level": "high",
+      "behavior": "indemnification"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 57,
+      "clause_text": "Notwithstanding anything to the contrary, in no event shall the [ * ] paid or payable to Distributor by Google pursuant to Clause 4.1  (Payments) exceed the [ * ].",
+      "clause_type": "Cap On Liability",
+      "risk_level": "high",
+      "behavior": "liability_cap"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 69,
+      "clause_text": "Either party may terminate this Agreement without cause at any time effective upon thirty (30) days' written notice.",
+      "clause_type": "Termination For Convenience",
+      "risk_level": "high",
+      "behavior": "termination"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 97,
+      "clause_text": "Consultant hereby irrevocably assigns to Company all right, title and interest in and to any information (including, without limitation, business plans and/or business information), technology, know-how, materials, notes, records, designs, ideas, inventions, improvements, devices, developments, discoveries, compositions, trade secrets, processes, methods and/or techniques, whether or not patentable or copyrightable, that are conceived, reduced to practice or made by Consultant alone or jointly with others in the course of performing the Services or through the use of Confidential Information (collectively, 111nventions\").",
+      "clause_type": "Ip Ownership Assignment",
+      "risk_level": "medium",
+      "behavior": "ip_assignment"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 152,
+      "clause_text": "Notwithstanding the foregoing, this  Agreement can be terminated by EKR at the end of the Initial Term by delivery of written notice to PPI at least one hundred eighty (180)  days prior to the end of the Initial Term or any renewal term.",
+      "clause_type": "Notice Period To Terminate Renewal",
+      "risk_level": "high",
+      "behavior": "renewal_notice"
+    },
+    {
+      "source_dataset": "legal_contract_clauses",
+      "source_file": "data\\raw\\contracts\\legal_contract_clauses.csv",
+      "source_row": 437,
+      "clause_text": "If the arbitrator determines that any Outstanding Patent should be or should have been, as applicable, an Assigned Patent, Seller shall (and shall cause the other Seller Parties to) assign such Patent to the Purchaser Assignees in accordance with Section 2.1(b)(iii)(E).",
+      "clause_type": "Ip Ownership Assignment",
+      "risk_level": "medium",
+      "behavior": "dispute_resolution"
+    }
+  ]
+}

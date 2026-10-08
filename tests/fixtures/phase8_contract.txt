@@ -1,0 +1,43 @@
+MASTER SERVICES AGREEMENT
+
+This Master Services Agreement (the “Agreement”) is between Acme Analytics
+Private Limited (the “Customer”) and Bharat Cloud Services Private Limited
+(the “Supplier”), effective 1 January 2027.
+
+1. Services. The Supplier shall provide hosted analytics services and deliver
+monthly service reports within 5 business days after each calendar month.
+
+2. Fees and Payment. The Customer shall pay INR 10,00,000 annually against a
+valid invoice, within 30 days of receipt. Taxes are additional.
+
+3. Term and Renewal. The initial term is one year. The Agreement automatically
+renews for successive one-year periods unless either party gives 30 days’ prior
+written notice of non-renewal.
+
+4. Termination. Either party may terminate for convenience on 30 days’ written
+notice. Either party may terminate for cause for a material breach not cured
+within 15 days after written notice. Termination does not affect accrued payment
+obligations.
+
+5. Indemnification. The Supplier shall indemnify and hold harmless the Customer
+from third-party claims arising from the Supplier’s services, subject to the
+limitations stated below.
+
+6. Limitation of Liability. Each party’s aggregate liability is capped at the
+fees paid in the previous 12 months. The cap does not apply to fraud,
+confidentiality breaches, or indemnification obligations. Neither party is
+liable for consequential damages.
+
+7. Confidentiality. Confidential information must be protected and may be
+disclosed only to personnel with a need to know, subject to customary
+exceptions. These obligations survive termination for 7 years.
+
+8. Intellectual Property. Customer owns all work product created specifically
+for Customer, and Supplier assigns that work product to Customer. Supplier
+retains its background IP and grants Customer a license to use it.
+
+9. Governing Law and Jurisdiction. This Agreement is governed by the laws of
+India. The courts at Bengaluru, Karnataka have exclusive jurisdiction.
+
+10. Non-Solicit. During the term and for 12 months after termination, neither
+party shall solicit the other party’s employees in India.

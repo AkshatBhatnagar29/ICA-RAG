@@ -1,0 +1,924 @@
+{
+  "dataset_name": "meity_cloud_master_service_agreement",
+  "version": "v1",
+  "description": "Initial third-contract generalization set for the official MeitY Master Service Agreement procurement template. This is a template, not an executed transaction-specific contract.",
+  "source_documents": [
+    {
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466",
+      "source_document": "Guidelines for Master Service Agreement.pdf",
+      "source_sha256": "f18aa529adf7f9a45fa858cbfb35909fcddac915b25143c289d76ee04a9701f4",
+      "provenance": "Official MeitY/eGov Standards source: https://egovstandards.gov.in/sites/default/files/2026-03/Guidelines%20for%20Master%20Service%20Agreement.pdf; CONTRACT_TEMPLATE / MASTER_SERVICE_AGREEMENT_TEMPLATE, not an executed contract."
+    }
+  ],
+  "cases": [
+    {
+      "id": "MEITY-001",
+      "category": "contract_factual",
+      "question": "What parties does this MSA define for the agreement?",
+      "expected_concepts": [
+        "Purchaser",
+        "Managed Service Provider"
+      ],
+      "expected_answer": "The MSA defines the parties as the Purchaser and the Managed Service Provider.",
+      "expected_evidence": [
+        {
+          "page": 13,
+          "anchor": "Parties means Purchaser and Managed Service Provider"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Definitions, page 13",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-002",
+      "category": "contract_factual",
+      "question": "How does the document define the services covered by the MSA?",
+      "expected_concepts": [
+        "Stakeholders",
+        "Managed Service Provider",
+        "ICT assets"
+      ],
+      "expected_answer": "Services are delivered to the Purchaser's stakeholders and nominated agencies using tangible and intangible assets managed and operated by the Managed Service Provider.",
+      "expected_evidence": [
+        {
+          "page": 13,
+          "anchor": "Services means the services delivered to the Stakeholders"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Definitions, page 13",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-003",
+      "category": "contract_factual",
+      "question": "What does the document mean by a Service Level?",
+      "expected_concepts": [
+        "level of service",
+        "performance criteria"
+      ],
+      "expected_answer": "A Service Level means the level of service and other performance criteria applying to the Services delivered by the Managed Service Provider.",
+      "expected_evidence": [
+        {
+          "page": 13,
+          "anchor": "Service Level means the level of service and other performance criteria"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-004"
+      ],
+      "provenance": "Definitions, page 13",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-004",
+      "category": "service_level",
+      "question": "Which components are included in the defined SLA?",
+      "expected_concepts": [
+        "Availability",
+        "Performance",
+        "Security",
+        "Support",
+        "Disaster Recovery",
+        "Audit",
+        "Monitoring"
+      ],
+      "expected_answer": "The defined SLA includes Availability, Performance, Security, Support, Helpdesk, Disaster Recovery, Audit, Monitoring, and other SLAs executed as part of the MSA.",
+      "expected_evidence": [
+        {
+          "page": 13,
+          "anchor": "SLA means the Availability, Performance, Security, Support, Helpdesk"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-003"
+      ],
+      "provenance": "Definitions, page 13",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-005",
+      "category": "contract_factual",
+      "question": "When does the agreement begin and what event ends its ordinary term?",
+      "expected_concepts": [
+        "Effective Date",
+        "operation and maintenance completion date"
+      ],
+      "expected_answer": "It begins on the stated Effective Date and continues until the operation and maintenance completion date unless terminated earlier.",
+      "expected_evidence": [
+        {
+          "page": 14,
+          "anchor": "shall continue till operation and maintenance completion date"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Term and Duration, page 14",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-006",
+      "category": "obligation",
+      "question": "What must the Purchaser provide to help test the system or application?",
+      "expected_concepts": [
+        "support",
+        "personnel",
+        "test"
+      ],
+      "expected_answer": "The Purchaser or its nominated agencies must provide personnel support to test the system, application, or solution during the term.",
+      "expected_evidence": [
+        {
+          "page": 19,
+          "anchor": "provide any support through personnel to test the system"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-007"
+      ],
+      "provenance": "Purchaser obligations, page 19",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-007",
+      "category": "obligation",
+      "question": "What must the Managed Service Provider provide to the Purchaser?",
+      "expected_concepts": [
+        "Deliverables"
+      ],
+      "expected_answer": "The Managed Service Provider must provide the Deliverables specified by the Purchaser.",
+      "expected_evidence": [
+        {
+          "page": 19,
+          "anchor": "It shall provide to the Purchaser or its nominated agencies, the Deliverables"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-006"
+      ],
+      "provenance": "Managed Service Provider obligations, page 19",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-008",
+      "category": "obligation",
+      "question": "What standard must the provider meet when performing the Services?",
+      "expected_concepts": [
+        "industry and technical standards",
+        "Service Levels",
+        "Project Timelines"
+      ],
+      "expected_answer": "The provider must perform in a good and workmanlike manner consistent with applicable industry and technical standards, comply with Service Levels, and follow the Purchaser's Project Timelines.",
+      "expected_evidence": [
+        {
+          "page": 19,
+          "anchor": "perform the Services in a good and workmanlike manner commensurate"
+        },
+        {
+          "page": 19,
+          "anchor": "comply with the applicable Service Levels"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "mode": "ALL_OF",
+          "targets": [
+            {
+              "page": 19,
+              "anchor": "perform the Services in a good and workmanlike manner commensurate"
+            },
+            {
+              "page": 19,
+              "anchor": "comply with the applicable Service Levels"
+            }
+          ]
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Provider obligations, page 19",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-009",
+      "category": "payment_financial",
+      "question": "How is the amount payable for Cloud Services determined?",
+      "expected_concepts": [
+        "actual consumption",
+        "hourly monthly yearly pricing"
+      ],
+      "expected_answer": "The Purchaser pays for actual consumption of Cloud Services, using the applicable pricing model and discovered unit prices.",
+      "expected_evidence": [
+        {
+          "page": 23,
+          "anchor": "shall pay to the Managed Service Provider for the actual consumption"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms of Payment, page 23",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-010",
+      "category": "payment_financial",
+      "question": "Can the provider increase the Cloud Services fee during the project?",
+      "expected_concepts": [
+        "no increase",
+        "agreed provision"
+      ],
+      "expected_answer": "The provider may not increase the fee during the project unless the Cloud Contract contains an agreed provision allowing it.",
+      "expected_evidence": [
+        {
+          "page": 23,
+          "anchor": "shall not increase the fee of the Cloud Services"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms of Payment, page 23",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-011",
+      "category": "payment_financial",
+      "question": "What is the normal payment period after receipt of an invoice and supporting documents?",
+      "expected_concepts": [
+        "30 working days",
+        "invoice",
+        "supporting documents"
+      ],
+      "expected_answer": "Payment is to be made within 30 working days of receipt of the invoice and supporting documents, subject to applicable deductions.",
+      "expected_evidence": [
+        {
+          "page": 24,
+          "anchor": "Payment shall be made within <30 working days> of the receipt of invoice"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Invoicing and Settlement, page 24",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-012",
+      "category": "payment_financial",
+      "question": "What financial consequences can affect payments under the agreement?",
+      "expected_concepts": [
+        "liquidated damages",
+        "SLA penalties",
+        "adjustments"
+      ],
+      "expected_answer": "Payments may be subject to liquidated damages or SLA penalties and related adjustments or corrections provided for in the MSA or SLA.",
+      "expected_evidence": [
+        {
+          "page": 24,
+          "anchor": "Payments shall be subject to the application of liquidated damages or SLA penalties"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Terms of Payment, page 24",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-013",
+      "category": "obligation",
+      "question": "What security and safety requirements apply to the provider?",
+      "expected_concepts": [
+        "IT Act",
+        "Purchaser security manual",
+        "industry standards"
+      ],
+      "expected_answer": "The provider must comply with applicable security and safety requirements under the IT Act or Telegraph Act, the Purchaser's IT Security Manual, and relevant industry standards.",
+      "expected_evidence": [
+        {
+          "page": 22,
+          "anchor": "comply with the technical requirements of the relevant security, safety"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Security and Safety, page 22",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-014",
+      "category": "obligation",
+      "question": "What must the parties report about unauthorized access attempts?",
+      "expected_concepts": [
+        "written report",
+        "unauthorized persons",
+        "data facilities Confidential Information"
+      ],
+      "expected_answer": "The parties should report in writing identified attempts by unauthorized persons to access or interfere with data, facilities, or Confidential Information.",
+      "expected_evidence": [
+        {
+          "page": 22,
+          "anchor": "report forthwith in writing to each other all identified attempts"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-015"
+      ],
+      "provenance": "Security and Safety, page 22",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-015",
+      "category": "obligation",
+      "question": "What audit right does the Purchaser have over the provider and its facilities?",
+      "expected_concepts": [
+        "audit",
+        "inspect",
+        "records",
+        "systems"
+      ],
+      "expected_answer": "The Purchaser or its nominated agency may audit and inspect the provider, agents, third-party facilities, data centres, documents, records, procedures, and systems to the extent reasonably necessary to verify service provision.",
+      "expected_evidence": [
+        {
+          "page": 36,
+          "anchor": "shall have the right to audit and inspect Managed Service Provider"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-014"
+      ],
+      "provenance": "Audit, Access and Reporting, page 36",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-016",
+      "category": "confidentiality_or_data",
+      "question": "What safeguards are required for sensitive or confidential data?",
+      "expected_concepts": [
+        "encryption",
+        "cryptographic algorithms",
+        "Purchaser approval"
+      ],
+      "expected_answer": "Sensitive, confidential, or restricted data must be encrypted using an appropriate security process and approved key-management options suited to the Purchaser's requirements.",
+      "expected_evidence": [
+        {
+          "page": 33,
+          "anchor": "data is encrypted as part of a standard security process"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Privacy and Security Safeguards, page 33",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-017",
+      "category": "confidentiality_or_data",
+      "question": "What must the provider do after a security incident or intrusion?",
+      "expected_concepts": [
+        "notify promptly",
+        "security incidents",
+        "foreign government requests"
+      ],
+      "expected_answer": "The provider must promptly notify the Purchaser of security incidents, intrusions, or requests by foreign governments or their agencies for access to data.",
+      "expected_evidence": [
+        {
+          "page": 33,
+          "anchor": "shall notify the Purchaser promptly in the event of security incidents or intrusions"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Privacy and Security Safeguards, page 33",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-018",
+      "category": "confidentiality_or_data",
+      "question": "What confidentiality duty applies to Purchaser data?",
+      "expected_concepts": [
+        "confidentiality",
+        "integrity",
+        "availability",
+        "privacy",
+        "NDA"
+      ],
+      "expected_answer": "The provider must maintain the confidentiality, integrity, availability, and privacy of Purchaser data and execute an NDA with the Purchaser.",
+      "expected_evidence": [
+        {
+          "page": 34,
+          "anchor": "shall maintain confidentiality, integrity, availability and privacy of the Purchaser data"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Confidentiality, page 34",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-019",
+      "category": "confidentiality_or_data",
+      "question": "Where must the provider store data under the MSA?",
+      "expected_concepts": [
+        "India",
+        "Indian Territory",
+        "Purchaser approval"
+      ],
+      "expected_answer": "The provider must store all types of data within Indian Territory and may not take data outside India unless explicitly approved by the Purchaser.",
+      "expected_evidence": [
+        {
+          "page": 35,
+          "anchor": "shall store all types of data"
+        },
+        {
+          "page": 35,
+          "anchor": "within the Indian Territory"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "mode": "ALL_OF",
+          "targets": [
+            {
+              "page": 35,
+              "anchor": "shall store all types of data"
+            },
+            {
+              "page": 35,
+              "anchor": "within the Indian Territory"
+            }
+          ]
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Location of Data, page 35",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-020",
+      "category": "confidentiality_or_data",
+      "question": "Who owns data created as part of the project?",
+      "expected_concepts": [
+        "Purchaser ownership",
+        "all data"
+      ],
+      "expected_answer": "The Purchaser owns all data created as part of the project without exceptions.",
+      "expected_evidence": [
+        {
+          "page": 43,
+          "anchor": "All the data created as the part of the project shall be owned by Purchaser"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-018"
+      ],
+      "provenance": "Data Ownership, page 43",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-021",
+      "category": "obligation",
+      "question": "What backup duties does the Managed Service Provider have?",
+      "expected_concepts": [
+        "configure",
+        "schedule",
+        "manage backups",
+        "Purchaser or MeitY policy"
+      ],
+      "expected_answer": "The provider must configure, schedule, and manage backups of the listed data and systems according to the Purchaser's or MeitY's policy.",
+      "expected_evidence": [
+        {
+          "page": 43,
+          "anchor": "shall configure, schedule and manage backups of all the data"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Backup, page 43",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-022",
+      "category": "contract_factual",
+      "question": "What happens to newly created intellectual property developed solely during performance?",
+      "expected_concepts": [
+        "Purchaser owns",
+        "perpetual use",
+        "newly created IPR"
+      ],
+      "expected_answer": "The Purchaser owns and may use in perpetuity newly created IPR arising solely during execution, and the provider must disclose and transfer it as required.",
+      "expected_evidence": [
+        {
+          "page": 36,
+          "anchor": "shall own and have a right in perpetuity to use all newly created Intellectual Property Rights"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Intellectual Property Rights, page 36",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-023",
+      "category": "contract_factual",
+      "question": "Who retains pre-existing intellectual property rights?",
+      "expected_concepts": [
+        "party that owned rights",
+        "pre-existing work",
+        "license"
+      ],
+      "expected_answer": "Pre-existing intellectual property remains with the party that owned it before the Effective Date, subject to the Purchaser's stated license rights for project documents and materials.",
+      "expected_evidence": [
+        {
+          "page": 37,
+          "anchor": "All intellectual property rights existing prior to the Effective Date"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Intellectual Property Rights, page 37",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-024",
+      "category": "indemnity_or_liability",
+      "question": "What is the general liability cap for claims related to the agreement?",
+      "expected_concepts": [
+        "direct damages",
+        "one time total contract value",
+        "exceptions"
+      ],
+      "expected_answer": "Liability is limited to direct damages and, generally, may not exceed one time the total contract value, subject to the stated indemnification and security-breach exceptions.",
+      "expected_evidence": [
+        {
+          "page": 29,
+          "anchor": "shall be the payment of direct damages only which shall in no event exceed one time the total contract value"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-025"
+      ],
+      "provenance": "Indemnification and Limitation of Liability, page 29",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-025",
+      "category": "indemnity_or_liability",
+      "question": "Which obligations are outside the general liability cap?",
+      "expected_concepts": [
+        "indemnification",
+        "breach of security clause"
+      ],
+      "expected_answer": "The general cap does not apply to indemnification obligations or breach of Clause 1.11.4.",
+      "expected_evidence": [
+        {
+          "page": 29,
+          "anchor": "shall not be applicable to the indemnification obligations"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-024"
+      ],
+      "provenance": "Indemnification and Limitation of Liability, page 29",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-026",
+      "category": "termination_notice",
+      "question": "What cure notice applies to a material breach?",
+      "expected_concepts": [
+        "one month notice",
+        "cure material breach",
+        "termination"
+      ],
+      "expected_answer": "The aggrieved party may give one month's notice to cure the material breach; if it continues after the notice period, the relevant party may terminate.",
+      "expected_evidence": [
+        {
+          "page": 25,
+          "anchor": "terminate this Agreement upon giving a one month�s notice for curing the Material Breach"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-027"
+      ],
+      "provenance": "Termination for Material Breach, page 25",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-027",
+      "category": "termination_notice",
+      "question": "What notice is specified when SLA failure constitutes material breach?",
+      "expected_concepts": [
+        "30 days written notice",
+        "SLA",
+        "termination"
+      ],
+      "expected_answer": "For an SLA failure that constitutes material breach, the Purchaser may give a 30-day written notice to cure it, followed by a termination option if it continues.",
+      "expected_evidence": [
+        {
+          "page": 26,
+          "anchor": "serve a 30 days written notice for curing this Material Breach"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-026"
+      ],
+      "provenance": "Termination for Material Breach, page 26",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-028",
+      "category": "termination_notice",
+      "question": "Can the Purchaser terminate the contract for convenience?",
+      "expected_concepts": [
+        "any time",
+        "any reason",
+        "notice of termination"
+      ],
+      "expected_answer": "Yes. The Purchaser may terminate the Contract at any time for any reason by giving the provider a notice of termination referring to the convenience clause.",
+      "expected_evidence": [
+        {
+          "page": 26,
+          "anchor": "may at any time terminate the Contract for any reason"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Termination for Convenience, page 26",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-029",
+      "category": "obligation",
+      "question": "What transition obligations apply when the agreement ends?",
+      "expected_concepts": [
+        "exit management plan",
+        "migration",
+        "VMs data content",
+        "documentation"
+      ],
+      "expected_answer": "The provider must support transition and migration, prepare or follow an Exit Management Plan, migrate VMs and data to the new environment, and keep required documentation current and hand it over.",
+      "expected_evidence": [
+        {
+          "page": 39,
+          "anchor": "responsible for both transition of the services as well as migration of the VMs, Data, Content"
+        },
+        {
+          "page": 39,
+          "anchor": "all the documentation required by the Purchaser for smooth transition"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "mode": "ALL_OF",
+          "targets": [
+            {
+              "page": 39,
+              "anchor": "responsible for both transition of the services as well as migration of the VMs, Data, Content"
+            },
+            {
+              "page": 39,
+              "anchor": "all the documentation required by the Purchaser for smooth transition"
+            }
+          ]
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Transitioning/Exit, page 39",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-030",
+      "category": "service_level",
+      "question": "What document supplies the applicable service levels?",
+      "expected_concepts": [
+        "Model Service Level Agreements",
+        "part of agreement"
+      ],
+      "expected_answer": "The Model Service Level Agreements referenced on the MeghRaj webpage apply to the provider and form part of the MSA.",
+      "expected_evidence": [
+        {
+          "page": 40,
+          "anchor": "shall be applicable to Managed Service Provider and is part of this Agreement"
+        }
+      ],
+      "minimum_citations": 1,
+      "hard_negative_of": [
+        "MEITY-003"
+      ],
+      "provenance": "Service Level Agreement, page 40",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-031",
+      "category": "dispute_resolution",
+      "question": "What law and court jurisdiction apply to the agreement?",
+      "expected_concepts": [
+        "laws of India",
+        "Purchaser location",
+        "exclusive jurisdiction"
+      ],
+      "expected_answer": "The agreement is construed under applicable Indian law, and legal disputes are subject to the exclusive jurisdiction of courts where the Purchaser is located.",
+      "expected_evidence": [
+        {
+          "page": 42,
+          "anchor": "construed in accordance with IT Act and Regulations, Privacy laws and other applicable laws of India"
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Applicable Law and Dispute Resolution, page 42",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-032",
+      "category": "dispute_resolution",
+      "question": "What is the escalation path if a dispute is not resolved initially?",
+      "expected_concepts": [
+        "escalation",
+        "mediation",
+        "expert panel",
+        "arbitration"
+      ],
+      "expected_answer": "The process moves from escalation to mediation, then potentially to a panel of three experts, and finally to arbitration if unresolved.",
+      "expected_evidence": [
+        {
+          "page": 42,
+          "anchor": "both the parties should agree on a mediator"
+        },
+        {
+          "page": 42,
+          "anchor": "a neutral panel of 3 experts"
+        },
+        {
+          "page": 42,
+          "anchor": "then the matter should be referred to Arbitration"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "mode": "MINIMUM_N",
+          "minimum_n": 2,
+          "targets": [
+            {
+              "page": 42,
+              "anchor": "both the parties should agree on a mediator"
+            },
+            {
+              "page": 42,
+              "anchor": "a neutral panel of 3 experts"
+            },
+            {
+              "page": 42,
+              "anchor": "then the matter should be referred to Arbitration"
+            }
+          ]
+        }
+      ],
+      "minimum_citations": 1,
+      "provenance": "Applicable Law and Dispute Resolution, page 42",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-033",
+      "category": "risk_analysis",
+      "question": "Which provisions could expose the provider to financial risk?",
+      "expected_concepts": [
+        "payment deductions",
+        "liquidated damages",
+        "liability",
+        "termination"
+      ],
+      "expected_answer": "Potential financial exposure includes liquidated damages or SLA penalties deducted from payments, direct-damage liability subject to the stated cap and exceptions, and excess replacement-service costs after material breach.",
+      "expected_evidence": [
+        {
+          "page": 24,
+          "anchor": "liquidated damages or SLA penalties"
+        },
+        {
+          "page": 29,
+          "anchor": "direct damages only"
+        },
+        {
+          "page": 26,
+          "anchor": "liable to the Purchaser for any excess costs"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "mode": "MINIMUM_N",
+          "minimum_n": 2,
+          "targets": [
+            {
+              "page": 24,
+              "anchor": "liquidated damages or SLA penalties"
+            },
+            {
+              "page": 29,
+              "anchor": "direct damages only"
+            },
+            {
+              "page": 26,
+              "anchor": "liable to the Purchaser for any excess costs"
+            }
+          ]
+        }
+      ],
+      "minimum_citations": 2,
+      "difficulty": "hard",
+      "provenance": "Payment, liability, and termination provisions",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-034",
+      "category": "risk_analysis",
+      "question": "What could create operational or compliance exposure for the provider?",
+      "expected_concepts": [
+        "security safeguards",
+        "audit",
+        "data location",
+        "breach reporting"
+      ],
+      "expected_answer": "Potential exposure includes security and privacy failures, audit findings, unauthorized data access or disclosure, and non-compliance with Indian data-location and reporting requirements.",
+      "expected_evidence": [
+        {
+          "page": 33,
+          "anchor": "secure the Purchaser�s data and content"
+        },
+        {
+          "page": 35,
+          "anchor": "within the Indian Territory"
+        },
+        {
+          "page": 36,
+          "anchor": "right to audit and inspect"
+        }
+      ],
+      "evidence_groups": [
+        {
+          "mode": "MINIMUM_N",
+          "minimum_n": 2,
+          "targets": [
+            {
+              "page": 33,
+              "anchor": "secure the Purchaser�s data and content"
+            },
+            {
+              "page": 35,
+              "anchor": "within the Indian Territory"
+            },
+            {
+              "page": 36,
+              "anchor": "right to audit and inspect"
+            }
+          ]
+        }
+      ],
+      "minimum_citations": 2,
+      "difficulty": "hard",
+      "provenance": "Security, data location, and audit provisions",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-035",
+      "category": "insufficient_evidence",
+      "question": "What exact Cloud Services price was awarded to the provider?",
+      "expected_answer": "The exact awarded price cannot be determined from this template because commercial proposal values are placeholders or project-specific inputs.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "difficulty": "hard",
+      "provenance": "Template document; no executed commercial award",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-036",
+      "category": "insufficient_evidence",
+      "question": "Which named company was selected as the Managed Service Provider?",
+      "expected_answer": "The selected company cannot be determined because this is a reusable procurement template rather than an executed transaction-specific agreement.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "difficulty": "hard",
+      "provenance": "Template document; provider identity is not filled in",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-037",
+      "category": "insufficient_evidence",
+      "question": "What exact project commencement date applies to this MSA?",
+      "expected_answer": "No exact project commencement date can be determined because the Effective Date is a template placeholder to be completed for a project.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "difficulty": "adversarial",
+      "provenance": "Term and Duration contains an Effective Date placeholder",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    },
+    {
+      "id": "MEITY-038",
+      "category": "insufficient_evidence",
+      "question": "What uptime percentage does the provider owe under the SLA?",
+      "expected_answer": "The exact uptime percentage cannot be determined from this MSA alone because it refers to model SLAs and project-specific service-level terms.",
+      "expected_evidence": [],
+      "insufficient_evidence_expected": true,
+      "retrieval_applicable": false,
+      "difficulty": "adversarial",
+      "provenance": "The MSA references Model Service Level Agreements without specifying an uptime value",
+      "document_version_id": "bf3e4f37-f785-4167-a068-79dfad1d6466"
+    }
+  ]
+}

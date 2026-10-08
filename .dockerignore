@@ -1,0 +1,13 @@
+.git
+.venv
+.pytest_cache*
+.test-tmp*
+.uv-cache
+.pytest-tmp*
+.pytest-host-tmp
+.tmp-ui-run*
+.mypy_cache
+.ruff_cache
+__pycache__
+*.pyc
+.data

@@ -1,0 +1,487 @@
+{
+  "dataset_name": "ICIA Golden Evaluation Set - Standard Agreement v1",
+  "version": "1.0",
+  "source_document": "Standard-agreement.pdf",
+  "total_cases": 20,
+  "cases": [
+    {
+      "id": "SA-001",
+      "category": "contract_factual",
+      "question": "What is the order of precedence between the agreement, work order, financial bid, and tender documents?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "Agreement",
+        "Work Order",
+        "Financial Bid"
+      ],
+      "expected_answer": "The Agreement has highest precedence, followed by the Work Order and then the Financial Bid. The broader hierarchy also includes addenda or corrigenda, special conditions, general conditions, technical specifications, the accepted technical bid, drawings, and the Tender Notice.",
+      "forbidden_claims": [
+        "Tender documents are not part of the precedence hierarchy"
+      ],
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "following order of precedence"
+        },
+        {
+          "page": 3,
+          "anchor": "Addendum"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-002",
+      "category": "contract_factual",
+      "question": "What are the main obligations of the contractor under this agreement?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "carry out the work",
+        "Tender",
+        "completion period"
+      ],
+      "expected_answer": "The contractor must carry out the work according to the provisions of the Tender and complete it within the period specified in the tender.",
+      "forbidden_claims": [
+        "The agreement guarantees a specific payment amount"
+      ],
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "carry out the said work strictly"
+        },
+        {
+          "page": 2,
+          "anchor": "time period for completion"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-003",
+      "category": "contract_factual",
+      "question": "How can the contractual employee terminate the agreement?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "one calendar month",
+        "written notice"
+      ],
+      "expected_answer": "The Official may terminate the agreement by giving one calendar month's written notice to the Government.",
+      "forbidden_claims": [
+        "The employee can terminate immediately without notice"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "The Official may terminate this Agreement"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-004",
+      "category": "contract_factual",
+      "question": "How can the Government terminate the contractual employee's agreement?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "one month's advance notice",
+        "in lieu of notice"
+      ],
+      "expected_answer": "The Government may terminate the agreement by giving one month's advance written notice. If notice is not given, the agreement provides for payment equivalent to one month's pay in lieu of notice.",
+      "forbidden_claims": [
+        "The Government's notice period is unspecified"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "The Government may terminate this Agreement"
+        },
+        {
+          "page": 5,
+          "anchor": "pay of one month in lieu"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-005",
+      "category": "contract_factual",
+      "question": "Does this contract give a contractual employee a right to permanent or regular government employment?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "right or claim",
+        "regular service"
+      ],
+      "expected_answer": "No. The agreement expressly states that appointment on a contract basis does not give the Official any right or claim to appointment in the regular service of the Government.",
+      "forbidden_claims": [
+        "The contract guarantees future regularization"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "shall not bestow on the Official any right or claim"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-006",
+      "category": "legal_scope_required",
+      "question": "Based on this contract and Indian legal sources, can the employee claim permanent government employment?",
+      "requires_contract": true,
+      "requires_legal": true,
+      "expected_concepts": [
+        "contract position",
+        "legal authority"
+      ],
+      "expected_answer": "The answer must distinguish the contract's position from the legal position. It must use legal authority before making a broader conclusion about Indian law.",
+      "forbidden_claims": [
+        "A legal conclusion based only on the contract"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "right or claim to be appointed in the regular service"
+        }
+      ],
+      "minimum_citations": 2
+    },
+
+    {
+      "id": "SA-007",
+      "category": "legal_scope_required",
+      "question": "Does long-term contractual employment automatically create a right to regularization under Indian law?",
+      "requires_contract": true,
+      "requires_legal": true,
+      "expected_concepts": [
+        "contract evidence",
+        "legal authority"
+      ],
+      "expected_answer": "The answer must not rely only on the contract. Any conclusion about regularization under Indian law requires retrieved legal authority.",
+      "forbidden_claims": [
+        "Automatic legal conclusion without legal evidence"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "shall not bestow on the Official any right or claim"
+        }
+      ],
+      "minimum_citations": 2
+    },
+
+    {
+      "id": "SA-008",
+      "category": "contract_factual",
+      "question": "What does the 'no work, no wages' provision mean in this agreement?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "No work no wages",
+        "absence",
+        "proportionate reduction"
+      ],
+      "expected_answer": "The appointment is on a no-work-no-wages basis. Absence beyond admissible leave can result in a proportionate reduction in salary under the conditions stated in the agreement.",
+      "forbidden_claims": [
+        "Any absence automatically results in termination"
+      ],
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "No work no wages"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-009",
+      "category": "contract_factual",
+      "question": "Is the contractual employee entitled to CPF?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "not entitled",
+        "extended beyond one year"
+      ],
+      "expected_answer": "The Official is not entitled to CPF benefits unless the contract period is extended beyond one year.",
+      "forbidden_claims": [
+        "CPF is always available from the first day"
+      ],
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "Contributory Provident Fund"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-010",
+      "category": "contract_factual",
+      "question": "What additional benefits are available to the contractual employee?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "not entitled",
+        "additional benefits",
+        "Government servants"
+      ],
+      "expected_answer": "The agreement states that the Official is not entitled to other additional benefits applicable to Government servants, subject to specific provisions such as TA/DA and conditional CPF.",
+      "forbidden_claims": [
+        "All government employee benefits are available"
+      ],
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "shall not be entitled for any other additional benefits"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-011",
+      "category": "contract_factual",
+      "question": "How are disputes under the contractual employee agreement resolved?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "sole arbitration",
+        "Secretary",
+        "Arbitration and Conciliation Act"
+      ],
+      "expected_answer": "Disputes are referred to sole arbitration by a person appointed by the specified Secretary to the Government of Goa, with the Arbitration and Conciliation Act, 1996 applying.",
+      "forbidden_claims": [
+        "Court litigation is the mandatory first remedy"
+      ],
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "sole arbitration"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-012",
+      "category": "contract_factual",
+      "question": "Who bears the stamp duty under the agreement?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "Government",
+        "stamp duty"
+      ],
+      "expected_answer": "The Government bears the stamp duty payable on the agreement.",
+      "forbidden_claims": [
+        "The Official bears the stamp duty"
+      ],
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "stamp duty payable"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-013",
+      "category": "contract_factual",
+      "question": "Can the contractual employee engage in another trade or business while serving under this agreement?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "whole time",
+        "shall not",
+        "trade or business"
+      ],
+      "expected_answer": "The agreement says the Official must devote their whole time to assigned duties and must not directly or indirectly engage in trade or business on their own account.",
+      "forbidden_claims": [
+        "Outside business is expressly permitted"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "shall devote his/her whole time"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-014",
+      "category": "absence_detection",
+      "question": "Does the agreement guarantee promotion after three years?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "no provision",
+        "provided agreement"
+      ],
+      "expected_answer": "No promotion guarantee is identified in the provided agreement.",
+      "forbidden_claims": [
+        "Indian law never permits promotion"
+      ],
+      "expected_evidence": [],
+      "minimum_citations": 0
+    },
+
+    {
+      "id": "SA-015",
+      "category": "risk_analysis",
+      "question": "What risks can be identified from the contract provisions?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "evidence",
+        "risk",
+        "inference"
+      ],
+      "expected_answer": "The answer may identify risks, but explicit contractual facts and AI inferences must be clearly separated.",
+      "forbidden_claims": [
+        "The Government's notice period is unspecified"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "one month's advance notice"
+        },
+        {
+          "page": 5,
+          "anchor": "No work no wages"
+        },
+        {
+          "page": 5,
+          "anchor": "sole arbitration"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-016",
+      "category": "insufficient_evidence",
+      "question": "What exact monthly salary will the contractual employee receive?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "cannot be determined",
+        "blank",
+        "placeholder"
+      ],
+      "expected_answer": "The exact salary cannot be determined because the standard agreement contains a blank placeholder for the consolidated monthly salary.",
+      "forbidden_claims": [
+        "A fabricated salary amount"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "consolidated monthly salary"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-017",
+      "category": "contract_factual",
+      "question": "What happens if the employee is absent beyond admissible leave?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "absence",
+        "admissible leave",
+        "proportionate reduction"
+      ],
+      "expected_answer": "Absence beyond admissible leave can lead to a proportionate reduction in the admissible salary under the agreement.",
+      "forbidden_claims": [
+        "Automatic criminal liability"
+      ],
+      "expected_evidence": [
+        {
+          "page": 5,
+          "anchor": "absence beyond the admissible leave"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-018",
+      "category": "contract_factual",
+      "question": "Is the contractor required to perform the work according to the tender?",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "strictly",
+        "provisions of the Tender"
+      ],
+      "expected_answer": "Yes. The contractor must carry out the work strictly according to the provisions of the Tender.",
+      "forbidden_claims": [
+        "The tender is irrelevant to performance"
+      ],
+      "expected_evidence": [
+        {
+          "page": 2,
+          "anchor": "strictly as per the provisions of the Tender"
+        }
+      ],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-019",
+      "category": "legal_scope_control",
+      "question": "What is the Supreme Court's latest view on regularization of contractual employees?",
+      "requires_contract": false,
+      "requires_legal": true,
+      "expected_concepts": [
+        "legal source",
+        "current legal authority"
+      ],
+      "expected_answer": "The contract alone cannot answer this question. The system must retrieve an appropriate legal corpus or explicitly state that sufficient legal authority is unavailable.",
+      "forbidden_claims": [
+        "A latest Supreme Court ruling without legal evidence"
+      ],
+      "expected_evidence": [],
+      "minimum_citations": 1
+    },
+
+    {
+      "id": "SA-020",
+      "category": "citation_integrity",
+      "question": "Cite the exact provision supporting the statement that contract appointment does not create a right to regular service.",
+      "requires_contract": true,
+      "requires_legal": false,
+      "expected_concepts": [
+        "clause (2)",
+        "right or claim",
+        "regular service"
+      ],
+      "expected_answer": "The answer should identify clause (2) and cite the provision stating that contract appointment does not bestow any right or claim to appointment in regular government service.",
+      "forbidden_claims": [
+        "Citation to an unrelated clause"
+      ],
+      "expected_evidence": [
+        {
+          "page": 4,
+          "anchor": "shall not bestow on the Official any right or claim"
+        }
+      ],
+      "minimum_citations": 1
+    }
+  ]
+}

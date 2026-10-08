@@ -1,0 +1,11 @@
+{
+  "sample_version": "legal-source-sample-v1",
+  "source_datasets": [
+    "data/raw/legal/indian-legal-documents/data/train-00000.parquet",
+    "data/raw/legal/indian-case-laws/sample/v1/indian_case_laws_sample_v1.parquet"
+  ],
+  "records": [
+    {"corpus": "indian-legal-documents", "release": "train-00000", "source_identifier": "f5a8303259301fa3f697e4e4f41861de07a3da9957bbc1fdd9d9da8f121a9d1b", "title": "The Goa Agricultural Produce and Livestock Marketing (Promotion and Facilitation) (Amendment) Act, 2026", "source_type": "Act", "jurisdiction": "State (Goa)", "publisher": "Legislative Assembly of Goa", "effective_date": "2026-02-10", "text": "This Act amends the Goa Agricultural Produce and Livestock Marketing (Promotion and Facilitation) Act, 2007, including provisions concerning agriculturists, registration, voting, and marketing boards.", "source_file": "data/raw/legal/indian-legal-documents/data/train-00000.parquet", "source_row": 0},
+    {"corpus": "indian-case-laws", "release": "sample-v1", "source_identifier": "case_meta:hc:2020:10_8:patnahcucisdb94:BRHC010015742020:BRHC010015742020_1_2020-07-09", "title": "CWJC/2413/2020 of Sanjay Kumar, Vs The State of Bihar", "source_type": "CASE_LAW", "jurisdiction": "India", "publisher": "Patna High Court", "citation": "CWJC/2413/2020", "effective_date": "2020-07-09", "text": "Case title: CWJC/2413/2020 of Sanjay Kumar, Vs The State of Bihar. Parties: Sanjay Kumar versus The State of Bihar. Court: Patna High Court. Disposition: DISPOSED.", "source_file": "data/raw/legal/indian-case-laws/sample/v1/indian_case_laws_sample_v1.parquet", "source_row": 0, "parser_record_id": "2698098626eb06b0871d03f06c936d7fb86873c4", "source_relative_path": "year=2020/court=10_8/bench=patnahcucisdb94/BRHC010015742020_1_2020-07-09.json"}
+  ]
+}

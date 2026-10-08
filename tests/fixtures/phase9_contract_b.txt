@@ -1,0 +1,12 @@
+MASTER SERVICES AGREEMENT — Version B
+Effective date: 1 January 2025. Acme Private Limited (Customer) and Beta Solutions (Supplier).
+1. Payment. Customer shall pay invoices within 45 days of receipt.
+2. Services. Supplier must deliver the services and monthly reports by the fifth day of each month.
+3. Termination. Either party may terminate for convenience with 90 days' written notice.
+4. Renewal. This agreement renews for one year only by written agreement of both parties.
+5. Indemnification. Supplier shall indemnify Customer for third-party claims arising from Supplier's breach.
+6. Liability. Liability is capped at INR 25,00,000, except for fraud and confidentiality breaches.
+7. Confidentiality. Confidentiality obligations survive termination for 5 years.
+8. Intellectual Property. Customer owns all work product and Supplier assigns rights to Customer.
+9. Governing Law and Jurisdiction. The laws of India apply and courts in Mumbai have jurisdiction.
+11. Audit. Customer may audit Supplier's compliance records on reasonable notice.
